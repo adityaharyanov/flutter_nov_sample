@@ -1,0 +1,558 @@
+[
+    {
+        "id": 1,
+        "parent": null,
+        "name": "Income",
+        "imagePath": "",
+        "activityType": "INCOME"
+    },
+    {
+        "id": 2,
+        "parent": null,
+        "name": "Expense",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 3,
+        "parent": null,
+        "name": "Transfer",
+        "imagePath": "",
+        "activityType": "TRANSFER"
+    },
+    {
+        "id": 4,
+        "parent": {
+            "id": 1,
+            "parent": null,
+            "name": "Income",
+            "imagePath": "",
+            "activityType": "INCOME"
+        },
+        "name": "Salary",
+        "imagePath": "",
+        "activityType": "INCOME"
+    },
+    {
+        "id": 5,
+        "parent": {
+            "id": 1,
+            "parent": null,
+            "name": "Income",
+            "imagePath": "",
+            "activityType": "INCOME"
+        },
+        "name": "Loan",
+        "imagePath": "",
+        "activityType": "INCOME"
+    },
+    {
+        "id": 6,
+        "parent": {
+            "id": 1,
+            "parent": null,
+            "name": "Income",
+            "imagePath": "",
+            "activityType": "INCOME"
+        },
+        "name": "Reward",
+        "imagePath": "",
+        "activityType": "INCOME"
+    },
+    {
+        "id": 7,
+        "parent": {
+            "id": 1,
+            "parent": null,
+            "name": "Income",
+            "imagePath": "",
+            "activityType": "INCOME"
+        },
+        "name": "Extra",
+        "imagePath": "",
+        "activityType": "INCOME"
+    },
+    {
+        "id": 8,
+        "parent": {
+            "id": 1,
+            "parent": null,
+            "name": "Income",
+            "imagePath": "",
+            "activityType": "INCOME"
+        },
+        "name": "Bonus",
+        "imagePath": "",
+        "activityType": "INCOME"
+    },
+    {
+        "id": 9,
+        "parent": {
+            "id": 1,
+            "parent": null,
+            "name": "Income",
+            "imagePath": "",
+            "activityType": "INCOME"
+        },
+        "name": "Business",
+        "imagePath": "",
+        "activityType": "INCOME"
+    },
+    {
+        "id": 10,
+        "parent": {
+            "id": 1,
+            "parent": null,
+            "name": "Income",
+            "imagePath": "",
+            "activityType": "INCOME"
+        },
+        "name": "Other",
+        "imagePath": "",
+        "activityType": "INCOME"
+    },
+    {
+        "id": 11,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Groceries",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 12,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Food & Drink",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 13,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Entertainment",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 14,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Transport",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 15,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Health",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 16,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Gift",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 17,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Shopping",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 18,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Family",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 19,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Bills & Fee",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 20,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Car",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 21,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Travel",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 22,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Work",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 23,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Beauty",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 24,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Sport",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 25,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Hobby",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 26,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Motorcycle",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 27,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Tax",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 28,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Social",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 29,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Phone",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 30,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Internet",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 31,
+        "parent": {
+            "id": 2,
+            "parent": null,
+            "name": "Expense",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Pet",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 32,
+        "parent": {
+            "id": 12,
+            "parent": {
+                "id": 2,
+                "parent": null,
+                "name": "Expense",
+                "imagePath": "",
+                "activityType": "EXPENSE"
+            },
+            "name": "Food & Drink",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Restaurant",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 33,
+        "parent": {
+            "id": 12,
+            "parent": {
+                "id": 2,
+                "parent": null,
+                "name": "Expense",
+                "imagePath": "",
+                "activityType": "EXPENSE"
+            },
+            "name": "Food & Drink",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Snack",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 34,
+        "parent": {
+            "id": 12,
+            "parent": {
+                "id": 2,
+                "parent": null,
+                "name": "Expense",
+                "imagePath": "",
+                "activityType": "EXPENSE"
+            },
+            "name": "Food & Drink",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Beverage",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 35,
+        "parent": {
+            "id": 13,
+            "parent": {
+                "id": 2,
+                "parent": null,
+                "name": "Expense",
+                "imagePath": "",
+                "activityType": "EXPENSE"
+            },
+            "name": "Entertainment",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Movie",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 36,
+        "parent": {
+            "id": 15,
+            "parent": {
+                "id": 2,
+                "parent": null,
+                "name": "Expense",
+                "imagePath": "",
+                "activityType": "EXPENSE"
+            },
+            "name": "Health",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Medicine",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 37,
+        "parent": {
+            "id": 15,
+            "parent": {
+                "id": 2,
+                "parent": null,
+                "name": "Expense",
+                "imagePath": "",
+                "activityType": "EXPENSE"
+            },
+            "name": "Health",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Hospital",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 38,
+        "parent": {
+            "id": 15,
+            "parent": {
+                "id": 2,
+                "parent": null,
+                "name": "Expense",
+                "imagePath": "",
+                "activityType": "EXPENSE"
+            },
+            "name": "Health",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Check up",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 39,
+        "parent": {
+            "id": 31,
+            "parent": {
+                "id": 2,
+                "parent": null,
+                "name": "Expense",
+                "imagePath": "",
+                "activityType": "EXPENSE"
+            },
+            "name": "Pet",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Cat",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    },
+    {
+        "id": 40,
+        "parent": {
+            "id": 31,
+            "parent": {
+                "id": 2,
+                "parent": null,
+                "name": "Expense",
+                "imagePath": "",
+                "activityType": "EXPENSE"
+            },
+            "name": "Pet",
+            "imagePath": "",
+            "activityType": "EXPENSE"
+        },
+        "name": "Dog",
+        "imagePath": "",
+        "activityType": "EXPENSE"
+    }
+]

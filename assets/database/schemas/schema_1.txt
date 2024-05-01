@@ -1,0 +1,182 @@
+-- ----------------------------
+-- Table structure for account_profile
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS "account_profile" (
+  "id" INTEGER NOT NULL,
+  "email" TEXT NOT NULL,
+  "phone_number" INTEGER,
+  "avatar_url" TEXT,
+  "first_name" TEXT NOT NULL,
+  "last_name" TEXT,
+  "subscribtion_id" INTEGER,
+  "birthday" TEXT,
+  "created_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "modified_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
+----;;
+
+-- ----------------------------
+-- Table structure for activities
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS "activities" (
+  "id" INTEGER NOT NULL,
+  "datetime" text NOT NULL,
+  "category_id" INTEGER NOT NULL,
+  "activity_type" TEXT NOT NULL,
+  "currency_id" INTEGER NOT NULL,
+  "amount" integer NOT NULL,
+  "source_pocket_id" integer,
+  "destination_pocket_id" INTEGER,
+  "additional_note" TEXT,
+  "attachment_id" INTEGER,
+  "recurrence_id" INTEGER,
+  "created_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "modified_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
+----;;
+
+-- ----------------------------
+-- Table structure for activity_pocket_entries
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS "activity_pocket_entries" (
+  "id" INTEGER NOT NULL,
+  "type" TEXT NOT NULL,
+  "pocket_id" INTEGER NOT NULL,
+  "activity_id" INTEGER NOT NULL,
+  "amount" integer NOT NULL,
+  "starting_balance" integer NOT NULL,
+  "ending_balance" integer NOT NULL,
+  "created_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "modified_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
+----;;
+
+-- ----------------------------
+-- Table structure for activity_recurrences
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS "activity_recurrences" (
+  "id" INTEGER NOT NULL,
+  "activity_id" INTEGER NOT NULL,
+  "start_date" text NOT NULL,
+  "interval_digit" integer NOT NULL,
+  "interval_unit" TEXT NOT NULL,
+  "enable_notification" integer NOT NULL DEFAULT 1,
+  "notification_interval_digit" integer,
+  "notification_interval_unit" TEXT,
+  "created_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "modified_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
+----;;
+
+-- ----------------------------
+-- Table structure for m_categories
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS "m_categories" (
+  "id" INTEGER NOT NULL,
+  "parent_id" INTEGER,
+  "name" TEXT NOT NULL,
+  "icon_id" INTEGER NOT NULL,
+  "activity_type" TEXT NOT NULL,
+  "created_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "modified_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
+----;;
+
+-- ----------------------------
+-- Table structure for m_colors
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS "m_colors" (
+  "id" INTEGER NOT NULL,
+  "name" TEXT NOT NULL,
+  "color_code" TEXT NOT NULL,
+  "created_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "modified_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
+----;;
+
+-- ----------------------------
+-- Table structure for m_currencies
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS "m_currencies" (
+  "id" INTEGER NOT NULL,
+  "code" TEXT NOT NULL,
+  "name" TEXT NOT NULL,
+  "icon_id" INTEGER NOT NULL,
+  "created_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "modified_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
+----;;
+
+-- ----------------------------
+-- Table structure for m_icons
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS "m_icons" (
+  "id" INTEGER,
+  "name" TEXT NOT NULL,
+  "path" TEXT NOT NULL,
+  "created_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "modified_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
+----;;
+
+-- ----------------------------
+-- Table structure for m_pocket_types
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS "m_pocket_types" (
+  "id" INTEGER NOT NULL,
+  "name" TEXT NOT NULL,
+  "icon_id" INTEGER NOT NULL,
+  "created_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "modified_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
+----;;
+
+-- ----------------------------
+-- Table structure for m_pockets
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS "m_pockets" (
+  "id" INTEGER NOT NULL,
+  "currency_id" integer NOT NULL,
+  "icon_id" integer NOT NULL,
+  "pocket_type_id" integer NOT NULL,
+  "name" TEXT NOT NULL,
+  "description" TEXT,
+  "amount" integer NOT NULL DEFAULT 0,
+  "created_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "modified_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
+----;;
+
+-- ----------------------------
+-- Table structure for m_themes
+-- ----------------------------
+CREATE TABLE IF NOT EXISTS "m_themes" (
+  "id" INTEGER,
+  "code" TEXT,
+  "primary_color_id" TEXT,
+  "secondary_color_id" INTEGER,
+  "created_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  "modified_at" TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY ("id")
+);
+
